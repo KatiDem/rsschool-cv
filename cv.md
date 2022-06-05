@@ -18,6 +18,14 @@
 - Python
 - Git
 
+## **Code example**
+
+```javascript
+function multiply(a, b) {
+  return a * b;
+}
+```
+
 ## **Education**
 
 2017-2022 **Belarusian State University of Informatics and Radioelectronics**
