@@ -1,3 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
 body { 
-    color: brown;
+    color: darkslategrey;
+    font-family: 'Nanum Gothic', sans-serif;
+    min-height: 100vh;
+    margin: 0; 
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.wrap {
+    min-height: 100vh;
+    margin: auto;
+    background-color: lightgray;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    padding: 10px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    list-style: none;
+    align-items: center;
+    transition: .3s;
+}
+
+.nav-item a {
+    color: #829985;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.nav-item a:hover {
+    color: darkslategray;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background-color: darkgrey;
+    height: 250px;
+    user-select: none;
+}
+
+.header--name {
+    font-size: 54px;
+    font-weight: 1000;
+    letter-spacing: 7px;
+}
+
+.header--surname {
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.header--engineer {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+.header--img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 50%;
+}
+
+.main {
+    display: flex;
+    padding: 50px;
+}
+
+aside {
+    width: 30%;
+}
+
+.main-info {
+    width: 70%;
+    padding-right: 50px;
+}
+
+main ul {
+    list-style: none;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.section--header {
+    margin: 10px 0 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid darkslategray;
+}
+
+.content {
+    line-height: 150%;
+    font-size: 18px;
+}
+
+pre {
+    background-color: gainsboro;
+}
+
+.code {
+    font-size: 18px;
+}
+
+.project-link a {
+    color: darkslategray;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.project-link a:hover {
+    color: green;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.link a {
+    color: darkslategray;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.link  a:hover {
+    color: #669966;
+}
+
+.footer--year {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.rss-img {
+    width: 80px;
 }

@@ -3,11 +3,114 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Kate</title>
   </head>
   <body>
-      <p>A</p>
+      <div class="wrap">
+        <nav>
+            <div class="container">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#about">About Me</a></li>
+                    <li class="nav-item"><a href="#education">Education</a></li>
+                    <li class="nav-item"><a href="#projects">Projects</a></li>
+                    <li class="nav-item"><a href="#code">Code example</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="container header">
+                <img class="header--img" src="./assets/img/me.jpg" alt="Katerina" />
+                <div class="header--fullname">
+                    <h1 class="header--name"> Katerina </h1>
+                    <h2 class="header--surname"> Demeshko </h2>
+                    <h2 class="header--engineer">Software Engineer</h2>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container main">
+                <div class="main-info">
+                <section id="about"> 
+                    <h2 class="section--header"> About Me </h2>
+                    <p class="content"> 
+                        Hi! I'm a junior frontend developer and software engineer. 
+                        My goal is to learn something new and improve my JavaScript skills. 
+                        My core strengths are problem solving and teamwork.
+                    </p>
+                </section>
+                <section id="education"> 
+                    <h2 class="section--header"> Education </h2>
+                    <ul class="content">
+                        <li> • Belarussian State University of Informatics and Radioelectronics</li>
+                        <li> • Rolling Scopes School </li>
+                        <li> • AWS Cloud Practitioner Certified </li>
+                    </ul>
+                </section>
+                <section id="projects">
+                    <h2 class="section--header">Projects</h2>
+                    <ul class="content">
+                        <li class="link"><a target="_blank" href="https://cozy-mandazi-6f917e.netlify.app/"> • Github api search</a></li>
+                    </ul>
+                </section>
+                <section id="code">
+                    <h2 class="section--header">Code example</h2>
+                    <pre>
+                        <code class="code">
+    function getZerosCount(number) {
+        let zeros = 0;
+
+        while (number > 0.1) {
+            number /= 5;
+            zeros += Math.floor(number);
+        }
+        return zeros;
+    }
+                        </code>
+                    </pre>
+                </section> 
+            </div>    
+            <aside>
+                <section>
+                    <h2 class="section--header"> Contacts </h2>
+                    <ul class="content">
+                        <li> • +375-(29)-300-44-60 </li>
+                        <li> • demehko.kate@gmail.com </li>
+                        <li> • Minsk, Belarus </li>
+                    </ul>
+                </section>
+                <section >
+                    <h2 class="section--header"> Skills </h2>
+                    <ul class="content">
+                        <li> • HTML, CSS </li>
+                        <li> • Git </li>
+                        <li> • JavaScript </li>
+                        <li> • React </li>
+                        <li> • AWS, Cloud </li>
+                    </ul>
+                </section>
+                <section >
+                    <h2 class="section--header"> English </h2>
+                    <p class="content"> B2 (Upper-Intermediate) </p>
+                </section>
+            </aside>
+        </div>
+        </main>
+        <footer>
+            <div class="footer--year">2022</div>
+			<div class="link">
+				<a class="github-link" target="_blank" href="https://github.com/KatiDem"><img src="./assets/img/GitHub-Mark-32px.png" alt="gh" />GitHub</a>
+			</div>
+			<div class="footer--rsschool">
+				<a target="_blank" href="https://rs.school/js/"><img class="rss-img" src="./assets/img/rs_school_js.svg" alt="RSSchool" /></a>
+			</div>
+        </footer>
+    </div>
   </body>
 </html>
