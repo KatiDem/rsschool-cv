@@ -134,5 +134,35 @@ pre {
 }
 
 footer {
-    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: darkgrey;
+}
+
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 18px;
+}
+
+.link a {
+    color: darkslategray;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.link  a:hover {
+    color: #669966;
+}
+
+.footer--year {
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.rss-img {
+    width: 80px;
 }
