@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body { 
@@ -13,14 +15,25 @@ body {
     justify-content: space-between;
 }
 
+.wrap {
+    min-height: 100vh;
+    margin: auto;
+    background-color: lightgray;
+}
+
 .container {
-    max-width: 1440px;
+    max-width: 1000px;
     margin: 0 auto;
+}
+
+nav {
+    padding: 10px;
 }
 
 nav ul {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 25px;
     list-style: none;
     align-items: center;
     transition: .3s;
@@ -33,7 +46,7 @@ nav ul {
 }
 
 .nav-item a:hover {
-    color: #4d2323;
+    color: darkslategray;
 }
 
 .header {
@@ -42,7 +55,25 @@ nav ul {
     gap: 100px;
     background-color: darkgrey;
     height: 250px;
+    user-select: none;
+}
 
+.header--name {
+    font-size: 54px;
+    font-weight: 1000;
+    letter-spacing: 7px;
+}
+
+.header--surname {
+    font-size: 54px;
+    font-weight: 400;
+    letter-spacing: 7px;
+}
+
+.header--engineer {
+    font-size: 24px;
+    font-weight: 400;
+    margin-top: 10px;
 }
 
 .header--img {
@@ -53,8 +84,55 @@ nav ul {
 
 .main {
     display: flex;
+    padding: 50px;
+}
+
+aside {
+    width: 30%;
+}
+
+.main-info {
+    width: 70%;
+    padding-right: 50px;
+}
+
+main ul {
+    list-style: none;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+.section--header {
+    margin: 10px 0 20px;
+    padding: 10px 0;
+    border-bottom: 1px solid darkslategray;
+}
+
+.content {
+    line-height: 150%;
+    font-size: 18px;
+}
+
+pre {
+    background-color: gainsboro;
+}
+
+.code {
+    font-size: 18px;
+}
+
+.project-link a {
+    color: darkslategray;
+    text-decoration: none;  
+    transition: color 0.5s;
+}
+
+.project-link a:hover {
+    color: green;
 }
 
 footer {
     flex-direction: column;
-  }
+}
