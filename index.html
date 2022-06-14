@@ -3,11 +3,112 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
+    <link rel="stylesheet" href="./styles.css" />
     <title>Kate</title>
   </head>
   <body>
-      <p>A</p>
+        <nav>
+            <div class="container">
+                <ul class="nav-list">
+                    <li><a class="nav-item" href="#about">About Me</a></li>
+                    <li><a class="nav-item" href="#education">Education</a></li>
+                    <li><a class="nav-item" href="#projects">Projects</a></li>
+                    <li><a class="nav-item" href="#code">Code example</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <header class="header">
+            <div class="container">
+                <img class="header--img" src="./assets/img/me.jpg" alt="Katerina" />
+                <div class="header--fullname">
+                    <h1 class="header--name"> Katerina </h1>
+                    <h1 class="header--surname"> Demeshko </h1>
+                    <h2 class="header--engineer">Software Engineer</h2>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="container main">
+                <div>
+                <section id="about"> 
+                    <h2> About Me </h2>
+                    <p> 
+                        Hi! I'm a junior frontend developer and software engineer. 
+                        My goal is to learn something new and improve my JavaScript skills. 
+                        My core strengths are problem solving and teamwork.
+                    </p>
+                </section>
+                <section id="education"> 
+                    <h2> Education </h2>
+                    <ul>
+                        <li> Belarussian State University of Informatics and Radioelectronics</li>
+                        <li> Rolling Scopes School </li>
+                        <li> AWS Cloud Practitioner Certified </li>
+                    </ul>
+                </section>
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <ul>
+                        <li><a target="_blank" href="https://cozy-mandazi-6f917e.netlify.app/"> Github api search</a></li>
+                    </ul>
+                </section>
+                <section id="code">
+                    <h2>Code example</h2>
+                    <pre>
+                        <code>
+                            function getZerosCount(number) {
+                                let zeros = 0;
+
+                                while (number > 0.1){
+                                  number /= 5;
+                                  zeros += Math.floor(number);
+                                }
+                              return zeros;
+                              }
+                        </code>
+                    </pre>
+                </section> 
+            </div>    
+            <aside>
+                <section>
+                    <h2> Contacts </h2>
+                    <ul>
+                        <li> +375-(29)-300-44-60 </li>
+                        <li> demehko.kate@gmail.com </li>
+                        <li> Minsk, Belarus </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2> Skills </h2>
+                    <ul>
+                        <li> HTML, CSS </li>
+                        <li> Git </li>
+                        <li> JavaScript </li>
+                        <li> React </li>
+                        <li> AWS, Cloud </li>
+                    </ul>
+                </section>
+                <section>
+                    <h2> English </h2>
+                    <p> B2 (Upper-Intermediate) </p>
+                </section>
+            </aside>
+        </div>
+        </main>
+        <footer>
+            <div class="footer-year">2022</div>
+			<div class="footer-github">
+				<a target="_blank" href="https://github.com/KatiDem"><i class="fab fa-github"></i>GitHub</a>
+			</div>
+			<div class="footer-rsschool">
+				<a target="_blank" href="https://rs.school/js/"><img src="./assets/img/rs_school_js.svg" alt="RSSchool" /></a>
+			</div>
+        </footer>
   </body>
 </html>
